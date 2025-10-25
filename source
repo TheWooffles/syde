@@ -1023,6 +1023,7 @@ do
 
 			Library.Name = UI_TAG
 			Library.ResetOnSpawn = false
+			Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 			local marker = Instance.new("StringValue")
 			marker.Name = MARKER_NAME
@@ -1031,6 +1032,7 @@ do
 
 			pcall(function()
 				Library.Parent = coregui
+				Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
 			end)
 
 			-- Ensure Library stays in CoreGui
@@ -1041,6 +1043,7 @@ do
 						warn("Syde 〡 UI moved. Restoring...")
 						pcall(function()
 							Library.Parent = coregui
+							Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
 						end)
 					end
 				end
