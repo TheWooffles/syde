@@ -1024,6 +1024,7 @@ do
 			Library.Name = UI_TAG
 			Library.ResetOnSpawn = false
 			Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
+			Library.DisplayOrder = 1
 
 			local marker = Instance.new("StringValue")
 			marker.Name = MARKER_NAME
@@ -1033,6 +1034,7 @@ do
 			pcall(function()
 				Library.Parent = coregui
 				Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
+				Library.DisplayOrder = 1
 			end)
 
 			-- Ensure Library stays in CoreGui
@@ -1044,6 +1046,7 @@ do
 						pcall(function()
 							Library.Parent = coregui
 							Library.ZIndexBehavior = Enum.ZIndexBehavior.Global
+							Library.DisplayOrder = 1
 						end)
 					end
 				end
